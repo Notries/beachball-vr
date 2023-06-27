@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 
+      This is an HTML comment
+      You can write text in a comment and the content won't be visible in the page
+    -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link rel="icon" href="https://glitch.com/favicon.ico" /> -->
+
+    <!-- The website stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+   
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14"></script>
+    <script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@cb0bb8407968be713b79008548b7044908ba5729/dist/aframe-master.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-physics-system@v4.2.2/dist/aframe-physics-system.min.js"></script>
+
+    <script src="utilities.js" defer></script>
+    
+    <!-- Avatar management, including Vue/Aframe -->
+    <script src="avatar.js" defer></script>
+    
+    <!-- Firebase stuff -->
+    <script src="io.js" defer></script>
+    
+     <!-- An example of using a class to create advanced AFrame geometry  -->
+    <script src="generative-terrain.js" defer></script>
+
+    <!-- The main app and  -->
+    <script src="script.js" defer></script>
+
+    <!-- Scenes, TODO: add yours here -->
+    <!-- <script src="room-whichwitch.js" defer></script>
+    <script src="room-blank.js" defer></script> -->
+    <script src="room-volleyball.js" defer></script>
+  </head>
+ 
+  <body>
+    <a-scene physics>
+      <a-assets>
+        <!-- ASSETS GO HERE -->
+        <!-- COPY THEM INTO GLITCH "ASSETS", THEN PASTE THE URLS HERE -->
+        <!-- THEN USE THEM IN YOUR OBJECTS -->
+        <a-asset-item
+          id="wizardhat"
+          src="https://cdn.glitch.global/98591d90-151d-426b-a4d2-e73cd6614d72/Wizard%20hat.glb?v=1684958932603"
+        ></a-asset-item>
+        
+         <a-asset-item
+          id="piano"
+          src="https://cdn.glitch.global/98591d90-151d-426b-a4d2-e73cd6614d72/Piano.glb?v=1684966815181"
+        ></a-asset-item>  
+      
+        <img
+          id="nightsky"
+          src="https://cdn.glitch.global/98591d90-151d-426b-a4d2-e73cd6614d72/digital_painting_a_dark_starry_night.jpg?v=1684959087717"
+        />
+      
+        <img
+          id="beach"
+          src="https://cdn.glitch.global/b9b0d908-093e-4469-8882-227f52792884/digital_painting_animated_beach_with_waves.jpg?v=1685222432377"
+        />
+        
+        <img
+          id="sand-diffuse"
+          src="https://cdn.glitch.global/b9b0d908-093e-4469-8882-227f52792884/sandy%20beach%20diffuse%20map.png?v=1685222665358"
+        />
+        
+        <img
+          id="sand-normal"
+          src="https://cdn.glitch.global/b9b0d908-093e-4469-8882-227f52792884/sandy%20beach%20normal%20map.png?v=1685222669490"
+        />
+        
+        
+        <img
+          crossorigin="anonymous"
+          id="beachball-diffuse"
+          src="https://cdn.glitch.global/b9b0d908-093e-4469-8882-227f52792884/Beach%20ball%20diffuse%20map.png?v=1685222384625"
+        />
+        
+        <img
+          crossorigin="anonymous"
+          id="beachball-height"
+          src="https://cdn.glitch.global/b9b0d908-093e-4469-8882-227f52792884/Beach%20ball%20height%20map.png?v=1685222390116"
+        />
+        
+        <img
+          crossorigin="anonymous"
+          id="beachball-normal"
+          src="https://cdn.glitch.global/b9b0d908-093e-4469-8882-227f52792884/Beach%20ball%20normal%20map.png?v=1685222404339"
+        />
+    
+    
+        
+        
+      </a-assets>
+
+      <!-- Scene handled by Vue   -->
+      <a-entity id="scene"></a-entity>
+    </a-scene>
+  
+    <!-- Controls handled by Vue   -->
+    <div id="controls"></div>
+  </body>
+</html>
