@@ -26,7 +26,7 @@ Tap on the "VR" button in the bottom right corner and allow VR access to go into
 Put your phone in the Google Cardboard device and control your in-game avatar's head by tilting your head.
 
 ## Tools & Credits
-Developed with Vue in HTML/Javascript.
+Developed with *Vue* in *HTML*/*Javascript*.
 
 Uses *A-Frame* for 3D graphics rendering.
 
