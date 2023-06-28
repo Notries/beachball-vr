@@ -7,6 +7,8 @@ A beach VR experience to socialize with your friends while bouncing a beach ball
 
 Developed in *Social AR/VR Studio*, a course at Northwestern University by Professor Kate Compton.
 
+Coded on [Glitch.com](https://glitch.com/)
+
 Inspired by the notion of the "third place" (see: *The Great Good Place* by Ray Oldenburg, or [this excellent Wikipedia page](https://en.wikipedia.org/wiki/Third_place)).
 
 ## Controls
