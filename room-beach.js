@@ -1,3 +1,11 @@
+// *CREDITS*
+// Initial Vue component and component separation taken from starter code by Professor Kate Compton.
+// Avatar geometry designed and implemented by Nick Baird and Lucy Beck.
+// Scene geometry/lighting designed and implemented by Lucy Beck and Francis Brenner.
+// Ball physics implemented by Francis Brenner.
+// Ball respawning implemented by Chase Duvall and Connor Morikawa.
+/////////////////////
+
 /*global THREE Vue settings Terrain shuffleArray getRandom */
 /*
  * A game to play with laser friends
@@ -26,13 +34,6 @@ settings.scenes.laser = {
     Vue.set(avatar, "skirtLength", Math.random()*.7 + .4);
   },
 };
-
-
-
-/*==========================================================
- * Controls - for avatar creation or other interactions
- * Note that they disappear in VR mode!
- ==========================================================*/
 
 
 /*==========================================================
@@ -158,9 +159,7 @@ Vue.component("laser-scene", {
         
         // update the new ball position to the firebase under /respawn
         // ?? push
-        
         const respawnLoc = {x: ballRespawnX + displacementX, y: ballRespawnY, z: ballRespawnZ + displacementZ};
-        //IO.pushRespawn(respawnLoc);
         
         el.setAttribute('position', respawnLoc);
         el.components["dynamic-body"].syncToPhysics();
@@ -173,8 +172,6 @@ Vue.component("laser-scene", {
   },
   data() {
     return {
-      // hatSpheres: [],
-      // terrain: new Terrain(),
       spherePosition: "0 7 1.5",
       spherePositionObject: { x: 1, y: 7, z: 1.5 }
     };
@@ -187,7 +184,8 @@ Vue.component("laser-scene", {
  * The avatar doesn't get drawn for the player
  ==========================================================*/
 
-// This pieces moves with their body position,
+// NOTE: body position updates are not implemented!
+// This pieces move with their body position,
 // ie, only if you move them
 // or have a 6DoF headset, like the Quest
 Vue.component("laser-avatar-body", {
@@ -342,8 +340,6 @@ Vue.component("laser-avatar-head", {
   
   mounted() {
     setInterval(() => {
-      //console.log("Current Hat Color (Avatar): " + this.avatar.hatColor)
-      //console.log("Current Hat Color (Settings): " + this.settings.hatColor)
     }, 1000);
   },
   
@@ -359,16 +355,3 @@ Vue.component("laser-avatar-noposition", {
 
   props: ["avatar", "settings"],
 });
-
-/*
-Vue.component("laser-avatar-hand", {
-  template: `<a-entity>
-     <a-sphere 
-        radius=".03"  
-        :color="avatar.headColor.toHSL({shade:.4})" 
-      />
-  </a-entity>`,
-
-  props: ["avatar", "settings", "side", "userAvatar"],
-});
-*/

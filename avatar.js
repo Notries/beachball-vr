@@ -1,3 +1,10 @@
+// *CREDITS*
+// Avatar class and fields taken from starter code by Professor Kate Compton.
+// Additional fields and methods for avatar customization added by Nick Baird, Lucy Beck, and Connor Morikawa.
+// Server data updates to Firebase for avatar customization implemented by Francis Brenner.
+// Vue component extended by Francis Brenner and Chase Duvall.
+/////////////////////
+
 /*global THREE Vue noise avatars */
 
 // Track the location of an avatar, and keep it synced to Firebase
