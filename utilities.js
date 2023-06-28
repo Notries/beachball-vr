@@ -1,3 +1,7 @@
+// *CREDITS*
+// Taken entirely from starter code by Professor Kate Compton.
+/////////////////////
+
 /*global THREE Vue AFRAME */
 
 /*

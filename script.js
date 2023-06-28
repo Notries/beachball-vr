@@ -1,5 +1,11 @@
+// *CREDITS*
+// Initial Vue component taken from starter code by Professor Kate Compton.
+// Additional controls for Hat Color, Hat Brim Color, Body Shape, and Shoe Shape developed by Nick Baird and bugfixed by Francis Brenner.
+/////////////////////
+
 /* global IO THREE Vue Avatar avatars userAvatar PARAMS */
 // **** YOU DON'T NEED TO CHANGE ANYTHING IN HERE **/
+// ^^ NOTE: we did anyways :) 
 
 // Data about the current settings
 let settings = {

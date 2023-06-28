@@ -1,3 +1,7 @@
+// *CREDITS*
+// Taken entirely from starter code by Professor Kate Compton.
+/////////////////////
+
 // from https://github.com/hughsk/glsl-noise/blob/master/periodic/3d.glsl
 
 let greenFragmentShader = `

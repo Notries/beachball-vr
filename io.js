@@ -1,3 +1,9 @@
+// *CREDITS*
+// Avatar utilities, IO class and functions taken from starter code by Professor Kate Compton.
+// Firebase configuration imported by Francis Brenner and Connor Morikawa.
+// Minor bugfixes to IO class for Google Cardboard compatibility by Francis Brenner.
+/////////////////////
+
 /*global uuidv4 firebase Avatar THREE Vue settings Terrain shuffleArray getRandom */
 
 // Your web app's Firebase configuration
